@@ -7,7 +7,7 @@
     --acapra-purple-light: #7a4ba8;
     --acapra-purple-dark: #3d1e58;
     --acapra-cream-dark: #f0ebd9;
-    
+
     /* Design */
     --background: #f9f6ee;
     --foreground: #3d1e58;
@@ -23,14 +23,14 @@
     --accent-foreground: #f9f6ee;
     --border: #d4c7b8;
     --ring: #5a2d82;
-    
+
     --gradient-primary: linear-gradient(135deg, #5a2d82, #7a4ba8);
     --gradient-cream: linear-gradient(180deg, #f9f6ee, #f0ebd9);
-    
+
     /* ACAPRA Sombras */
     --shadow-purple: 0 10px 30px -10px rgba(90, 45, 130, 0.3);
     --shadow-soft: 0 4px 20px rgba(90, 45, 130, 0.1);
-    
+
     /* Animações */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -46,13 +46,18 @@ body {
     background-color: var(--background);
     color: var(--foreground);
     line-height: 1.6;
-    background-image: 
+    background-image:
         radial-gradient(circle at 20% 30%, rgba(90, 45, 130, 0.03) 0%, transparent 50%),
         radial-gradient(circle at 80% 70%, rgba(90, 45, 130, 0.02) 0%, transparent 50%);
     background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--primary);
@@ -401,6 +406,7 @@ img {
     transform: translateY(-4px);
     box-shadow: var(--shadow-purple);
 }
+
 /* Missão sobre */
 .mission {
     padding: 5rem 0;
@@ -676,9 +682,229 @@ html {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+
+@media (max-width: 570px) {
+    .container {
+        padding: 0 .75rem;
+    }
+
+    .header-content {
+        height: 3.5rem;
+    }
+
+    .logo-img {
+        height: 2.25rem;
+    }
+
+    .logo-text h1 {
+        font-size: 1rem;
+    }
+
+    .logo-text p {
+        font-size: .75rem;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .mobile-nav {
+        gap: .5rem;
+        padding: .75rem 0;
+    }
+
+    .mobile-nav-link {
+        padding: .75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero-content,
+    .section-header,
+    .cta-content {
+        max-width: 100%;
+    }
+
+    .badge {
+        font-size: .875rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-title {
+        font-size: clamp(1.75rem, 5vw, 2.25rem);
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 .5rem;
+    }
+
+    .hero-buttons {
+        gap: .75rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: .75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .statistics {
+        padding: 3rem 0;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.75rem;
+    }
+
+    .stat-label {
+        font-size: .9rem;
+    }
+
+    .stat-sublabel {
+        font-size: .8rem;
+    }
+
+    .about {
+        padding: 3.5rem 0;
+    }
+
+    .section-header h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-images {
+        grid-template-columns: 1fr;
+        gap: .75rem;
+    }
+
+    .about-img {
+        height: 10rem;
+    }
+
+    .mission {
+        padding: 3.5rem 0;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .mission-card {
+        padding: 1.25rem;
+    }
+
+    .mission-icon {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .mission-card h3 {
+        font-size: 1.125rem;
+    }
+
+    .mission-card p,
+    .mission-card li {
+        font-size: .95rem;
+    }
+
+    .news {
+        padding: 3.5rem 0;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .news-card {
+        padding: 1.25rem;
+    }
+
+    .news-date {
+        font-size: .85rem;
+    }
+
+    .news-card h3 {
+        font-size: 1rem;
+    }
+
+    .news-card p {
+        font-size: .95rem;
+    }
+
+    .cta {
+        padding: 3.5rem 0;
+    }
+
+    .cta-content h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-buttons {
+        gap: .75rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-logo-img {
+        height: 3rem;
+    }
+
+    .footer-description {
+        max-width: none;
+    }
+
+    .footer-bottom-content {
+        gap: .25rem;
+    }
+}
